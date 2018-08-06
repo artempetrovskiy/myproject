@@ -34,6 +34,20 @@ var_dump(__CLASS__);
 
 echo "Gert $f1";
 
+$name = 'Artem';
+$age = 35;
+echo "Меня зовут $name".PHP_EOL;
+echo 'Мне' . $age . 'лет';
+unset($age);
+
+
+
+
+
+
+
+
+
 
 
 
