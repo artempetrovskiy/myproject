@@ -1,8 +1,3 @@
 <?php
 
-$a = 17;
-$b = 10;
-$c = $a + $b;
-$d = 7;
-$result = $c + $d;
-echo $result;
+echo $result = $c = (($a = 17) + ($b = 10)) + ($d = 7);
