@@ -1,13 +1,17 @@
 <html>
     <body>
-        <form method="get">
+        <form method="post" action="formFromRedirect.php">
             Login: <input type="text" name="login">
+            <br>
             E-mail: <input type="text" name="email">
+            <br>
+            Username: <input type="text" name="username">
+            <br>
+            Age: <input type="text" name="age">
+            <br>
+            Terms of use: <input type="checkbox" name="termsOfUse">
+            <br>
             <input type="submit" value="Send">
         </form>
-        <?php
-        echo "<br/>login = " . $_GET['login'];
-        echo "<br/>email = " . $_GET['email'];
-        ?>
     </body>
 </html>
