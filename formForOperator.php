@@ -4,11 +4,17 @@
     </head>
     <body>
         <form method="post" action="ifOperator.php">
-            Variable: <input type="text" name="variable">
+            First Variable: <input type="text" name="firstVariable">
             <br>
-            SecondVariable: <input type="text" name="secondVariable">
+            Second Variable: <input type="text" name="secondVariable">
             <br>
-            Switch the scenario: <input type="text" name="switchScenario">
+            Third Variable: <input type="text" name="thirdVariable">
+            <br>
+            Fourth Variable: <input type="text" name="fourthVariable">
+            <br>
+            Fifth Variable: <input type="text" name="fifthVariable">
+            <br>
+            Choose the scenario: <input type="text" name="chooseScenario">
             <input type="submit" value="Send">
         </form>
     </body>
