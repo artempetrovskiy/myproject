@@ -95,21 +95,21 @@ foreach ($notSimpleArray as $keyValue){
     }
 }
 
-var_dump($evenAndNegativeArray); // 3
+$lengthOfEvenAndNegativeArray = count($evenAndNegativeArray);
 
 foreach ($evenAndNegativeArray as $keyValue){
-    for ($i = 0; $i < count($evenAndNegativeArray); $i++){
-        echo $keyValue + $evenAndNegativeArray[$i + 1];
+    for ($i = 0; $i < $lengthOfEvenAndNegativeArray; $i++) {
+        echo $evenAndNegativeArray[$i] + $evenAndNegativeArray[$i] . "\n";
     }
 }
 
 
-// Exercise 6
-
-$array = [2, 8, 101, -20, 101, 2, -5];
-
-
-
-foreach ($array as $keyValue){
-    if $keyValue <
-}
+//// Exercise 6
+//
+//$array = [2, 8, 101, -20, 101, 2, -5];
+//
+//
+//
+//foreach ($array as $keyValue){
+//    if $keyValue <
+//}
