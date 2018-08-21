@@ -82,7 +82,7 @@ var_dump($mirrorArray);
 
 $notSimpleArray = [];
 $evenAndNegativeArray = [];
-$arrayLength = 3;
+$arrayLength = 4;
 
 
 for ($i = 0; $i < $arrayLength; $i++){
@@ -97,19 +97,26 @@ foreach ($notSimpleArray as $keyValue){
 
 $lengthOfEvenAndNegativeArray = count($evenAndNegativeArray);
 
-foreach ($evenAndNegativeArray as $keyValue){
-    for ($i = 0; $i < $lengthOfEvenAndNegativeArray; $i++) {
-        echo $evenAndNegativeArray[$i] + $evenAndNegativeArray[$i] . "\n";
+var_dump($evenAndNegativeArray);
+
+$arraySums = [];
+
+for ($i = 0; $i < $lengthOfEvenAndNegativeArray; $i++){
+    for ($j = 0; $j < $lengthOfEvenAndNegativeArray; $j++){
+        if ($i < $j){
+            array_push($arraySums, ($evenAndNegativeArray[$i] + $evenAndNegativeArray[$j]));
+        }
     }
 }
 
+var_dump($arraySums);
 
-//// Exercise 6
-//
-//$array = [2, 8, 101, -20, 101, 2, -5];
-//
-//
-//
-//foreach ($array as $keyValue){
-//    if $keyValue <
-//}
+// Exercise 6
+
+$array = [2, 8, 101, -20, 101, 2, -5];
+
+
+
+foreach ($array as $keyValue){
+    if $keyValue <
+}
