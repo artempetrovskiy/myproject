@@ -118,5 +118,7 @@ $array = [2, 8, 101, -20, 101, 2, -5];
 
 
 foreach ($array as $keyValue){
-    if $keyValue <
+    if ($keyValue < 1){
+        echo "";
+    }
 }
