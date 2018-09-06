@@ -1,26 +1,48 @@
 <?php
-echo "<br/>login = ". $_POST['login'];
-echo "<br/>email = ". $_POST['email'];
-echo "<br/>username = ". $_POST['username'];
-echo "<br/>age = ". $_POST['age'];
+$employees = [
+    [
+        'name' => 'Clark Kent',
+        'age' => 22,
+        'skills' => ['PHP', 'Java', 'C#']
+    ],
+    [
+        'name' => 'Steve Stifler',
+        'age' => 21,
+        'skills' => ['С++', 'JS', 'CSS', 'HTML']
+    ],
+    [
+        'name' => 'Bruce Wayne',
+        'age' => 35,
+        'skills' => ['PHP', 'PHP Unit', 'XDebug', 'JS']
+    ],
+    [
+        'name' => 'Peter Parker',
+        'age' => 18,
+        'skills' => ['PHP Unit', 'C', 'Pascal']
+    ]
+];
 
-if (isset($_POST['termsOfUse'])) {
-    switch ($_POST['termsOfUse']){
-        case false:
-            echo "<br/> Юзер прочитал соглашение и конечно же не согласился";
-            break;
-        case "on":
-            echo "<br/> Юзер согласился не читая пользовательского соглашения";
-            break;
+
+foreach ($employees as $employer){
+    foreach ($employer as $keyProp => $prop){
+        if (is_array($prop)){
+
+            var_dump(array_search('PHP Unit', $prop));
+            var_dump(array_search('PHP', $prop));
+
+            if (((array_search('PHP Unit', $prop)) && (array_search('PHP', $prop))) === false){
+                continue;
+            }
+            if (((array_search('PHP Unit', $prop)) && (array_search('PHP', $prop))) === true){
+                echo "Есть оба навыка";
+                break;
+            }
+            if (((array_search('PHP Unit', $prop)) && (array_search('PHP', $prop))) === false){
+                echo "Есть хотя бы один";
+            }
+        }
     }
 }
-
-
-
-
-
-
-
 
 
 

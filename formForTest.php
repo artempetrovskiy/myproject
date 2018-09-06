@@ -3,7 +3,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <form method="post" action="ifOperator.php">
+        <form method="post" action="fortest.php">
             First Variable: <input type="text" name="firstVariable">
             <br>
             Second Variable: <input type="text" name="secondVariable">
